@@ -16,34 +16,34 @@ MateCloud是一款基于Spring Cloud Alibaba的微服务架构。旨在为大家
 ## 🎨 系统演示
 ### 👉 演示地址：https://cloud.mate.vip
 
-账号 | 密码| 操作权限
----|---|---
-admin | matecloud| mate-system模块不能执行增删改请求
+| 账号    | 密码        | 操作权限                   |
+|-------|-----------|------------------------|
+| admin | matecloud | mate-system模块不能执行增删改请求 |
 
 如果需要验证手机号码登录，手机号码采用页面默认号码，点击获取验证码，输入1188，即可登录。
 ### 🍯 商业版：https://plus.mate.vip
-账号 | 密码| 操作权限
----|---|---
-admin | matecloud123 | 不能执行增删改请求，如需全部权限加微信 matecloud 联系
+| 账号    | 密码           | 操作权限                             |
+|-------|--------------|----------------------------------|
+| admin | matecloud123 | 不能执行增删改请求，如需全部权限加微信 matecloud 联系 |
 
 ### 🍯 商业版Vue3的快照版：https://v3.mate.vip
-管理员类型 | 账号| 密码 | 用途
----|---|---|---  
-超级管理员 | admin | matecloud123 | 超级用户
-租户管理员 | tenant | matecloud123 | 此处模拟商城系统
+| 管理员类型 | 账号     | 密码           | 用途       |
+|-------|--------|--------------|----------|
+| 超级管理员 | admin  | matecloud123 | 超级用户     |
+| 租户管理员 | tenant | matecloud123 | 此处模拟商城系统 |
 
 `注意`：租户管理员的菜单完全自定义，可用于扩展开发商城系统、CRM系统、OA系统等任意系统需求。
 
 [商业版与开源版对比](https://doc.mate.vip/vip/product/business/)
 
 ## 📌 版本演进
-核心中间件 | 2.5.8及以下 | 当前:4.4.9
----|---|---
-Spring Boot | 2.3.*.RELEASE | <img src="https://img.shields.io/badge/Spring%20Boot-2.7.10-blue" alt="SpringBoot"/>
-Spring Cloud | Hoxton SR* | <img src="https://img.shields.io/badge/Spring%20Cloud-2021.0.5-blue" alt="SpringCloud"/>
-Spring Cloud Alibaba | 2.2.*.RELEASE | <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2021.0.4.0-blue" alt="SpringCloudAlibaba"/>
-Nacos | 1.4.*及以下 | <img src="https://img.shields.io/badge/Nacos-2.2.0-blue" alt="nacos"/>
-Sentinel | 1.8.1 | <img src="https://img.shields.io/badge/Sentinel-1.8.6-blue" alt="sentinel"/>
+| 核心中间件                | 2.5.8及以下      | 当前:4.4.9                                                                                                    |
+|----------------------|---------------|-------------------------------------------------------------------------------------------------------------|
+| Spring Boot          | 2.3.*.RELEASE | <img src="https://img.shields.io/badge/Spring%20Boot-2.7.10-blue" alt="SpringBoot"/>                        |
+| Spring Cloud         | Hoxton SR*    | <img src="https://img.shields.io/badge/Spring%20Cloud-2021.0.5-blue" alt="SpringCloud"/>                    |
+| Spring Cloud Alibaba | 2.2.*.RELEASE | <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2021.0.4.0-blue" alt="SpringCloudAlibaba"/> |
+| Nacos                | 1.4.*及以下      | <img src="https://img.shields.io/badge/Nacos-2.2.0-blue" alt="nacos"/>                                      |
+| Sentinel             | 1.8.1         | <img src="https://img.shields.io/badge/Sentinel-1.8.6-blue" alt="sentinel"/>                                |
 
 ## 📖 官方文档
 ### 👉 文档地址：[http://www.mate.vip/docs](http://www.mate.vip/docs)
@@ -187,27 +187,27 @@ matecloud -- 父项目,各模块分离，方便集成和微服务
 
 
 ## 🌭 项目源码
-|  项目   |   GITHUB  |   码云   |
-|---  |--- | --- |
-|  MateCloud后端源码   |  https://github.com/matevip/matecloud   |  https://gitee.com/matevip/matecloud   |
-|  Artemis前端源码   |  https://github.com/matevip/artemis   |  https://gitee.com/matevip/artemis   |
-|  MateBoot后端源码   |  https://github.com/matevip/mateboot   |  https://gitee.com/matevip/mateboot   |
+| 项目            | GITHUB                               | 码云                                  |
+|---------------|--------------------------------------|-------------------------------------|
+| MateCloud后端源码 | https://github.com/matevip/matecloud | https://gitee.com/matevip/matecloud |
+| Artemis前端源码   | https://github.com/matevip/artemis   | https://gitee.com/matevip/artemis   |
+| MateBoot后端源码  | https://github.com/matevip/mateboot  | https://gitee.com/matevip/mateboot  |
 
 ## 🥥 微服务项目示例
 
 - 🥥 [https://gitee.com/matevip/mate-demo](https://gitee.com/matevip/mate-demo)
 
 ## 🌭 Swagger2 - OpenAPI3
-|  Swagger2      |  OpenAPI3  | 注解位置                         |
-|  ----  | ----  |------------------------------|
-| `@Api`  | @Tag(name = "接口类描述") | Controller 类上                |
-| `@ApiOperation`  | @Operation(summary ="接口方法描述") | Controller 方法上               |
-| `@ApiImplicitParam`  | @Parameter(description="参数描述") | Controller 方法上 @Parameters 里 |
-| `@ApiImplicitParams`  | @Parameters | Controller 方法上               |
-| `@ApiParam`  | @Parameter(description="参数描述") | Controller 方法的参数上            |
-| `@ApiIgnore`  | @Parameter(hidden = true) 或 @Operation(hidden = true) 或 @Hidden | ----                         |
-| `@ApiModel`  | @Schema	 | Entity类上                     |
-| `@ApiModelProperty`  | @Schema	 | Entity属性上                    |
+| Swagger2             | OpenAPI3                                                        | 注解位置                         |
+|----------------------|-----------------------------------------------------------------|------------------------------|
+| `@Api`               | @Tag(name = "接口类描述")                                            | Controller 类上                |
+| `@ApiOperation`      | @Operation(summary ="接口方法描述")                                   | Controller 方法上               |
+| `@ApiImplicitParam`  | @Parameter(description="参数描述")                                  | Controller 方法上 @Parameters 里 |
+| `@ApiImplicitParams` | @Parameters                                                     | Controller 方法上               |
+| `@ApiParam`          | @Parameter(description="参数描述")                                  | Controller 方法的参数上            |
+| `@ApiIgnore`         | @Parameter(hidden = true) 或 @Operation(hidden = true) 或 @Hidden | ----                         |
+| `@ApiModel`          | @Schema	                                                        | Entity类上                     |
+| `@ApiModelProperty`  | @Schema	                                                        | Entity属性上                    |
 ## 🍻 贡献者名单
 欢迎提交[PR](https://gitee.com/matevip/matecloud/pulls)一起完善项目，以下为开源项目贡献的战友（排名不分先后）：
 
