@@ -211,6 +211,11 @@ matecloud -- 父项目,各模块分离，方便集成和微服务
 ## 🍻 贡献者名单
 欢迎提交[PR](https://gitee.com/matevip/matecloud/pulls)一起完善项目，以下为开源项目贡献的战友（排名不分先后）：
 
+SHA-1: a34537b2e01526a7d8385fe727bd8c1c427b1bf0
+
+* feat: 升级spring boot 2.7.5, nacos client 2.1.2
+
+
 @L.cm、@Z先生、@苏慕彦、@简、@madi、@yunfei08、[@hackerdom](https://github.com/aaronuu)
 
 ## ✨ 特别鸣谢
